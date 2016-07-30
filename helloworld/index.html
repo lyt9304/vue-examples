@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue Hello World!</title>
+	<!-- <link rel="stylesheet" href="../node_modules/todomvc-app-css/index.css"> -->
+</head>
+<body>
+
+	<div id="demo">
+		<p>{{message}}</p>
+		<input type="text" v-model='message'>
+	</div>
+	
+</body>
+<script src='../vendor/vue.js'></script>
+
+<script>
+	var demo = new Vue({
+		el:'#demo',
+		data:{
+			message:'Hello World',
+		}
+	})
+</script>
+</html>
